@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ComboBox fx:id="combo1" layoutX="150.0" layoutY="73.0" prefWidth="150.0" />
+      <Label layoutX="55.0" layoutY="65.0" text="SortBy: " />
+      <ComboBox fx:id="combo2" layoutX="376.0" layoutY="73.0" prefWidth="150.0" />
+      <TableView fx:id="tableView" layoutX="5.0" layoutY="108.0" prefHeight="245.0" prefWidth="591.0">
+        <columns>
+          <TableColumn fx:id="name" prefWidth="75.0" text="Name" />
+          <TableColumn fx:id="provider" prefWidth="75.0" text="Provider" />
+            <TableColumn fx:id="price" prefWidth="88.0" text="Price" />
+            <TableColumn fx:id="discount" prefWidth="75.0" text="Discount" />
+            <TableColumn fx:id="expdate" prefWidth="93.0" text="Exp Date" />
+            <TableColumn fx:id="status" prefWidth="79.0" text="Status" />
+            <TableColumn fx:id="finalprice" prefWidth="105.0" text="Final Price" />
+        </columns>
+      </TableView>
+      <Label layoutX="234.0" layoutY="20.0" text="List of Coupons" />
+      <Button fx:id="purchase" layoutX="249.0" layoutY="361.0" mnemonicParsing="false" onMouseClicked="#purchasedButtonClicked" text="Purchase Selected" />
+   </children>
+</Pane>

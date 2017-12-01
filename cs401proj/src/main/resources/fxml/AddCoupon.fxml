@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@../css/All.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="228.0" layoutY="14.0" text="ADD COUPON" />
+      <Label layoutX="193.0" layoutY="83.0" text="Name" />
+      <Label layoutX="142.0" layoutY="126.0" text="Provider" />
+      <Label layoutX="193.0" layoutY="168.0" text="Price" />
+      <Label layoutX="150.0" layoutY="214.0" text="DIscount" />
+      <Label layoutX="142.0" layoutY="259.0" text="ExpiryDate" />
+      <TextField fx:id="nameText" layoutX="331.0" layoutY="91.0" />
+      <TextField fx:id="providerText" layoutX="331.0" layoutY="134.0" />
+      <TextField fx:id="priceText" layoutX="331.0" layoutY="176.0" />
+      <TextField fx:id="DiscountText" layoutX="331.0" layoutY="222.0" />
+      <DatePicker fx:id="ExpiryText" layoutX="331.0" layoutY="267.0" />
+      <Label layoutX="192.0" layoutY="300.0" text="Status" />
+      <ComboBox fx:id="comboBox" layoutX="331.0" layoutY="308.0" onMouseClicked="#comboBoxClicked" prefWidth="150.0" />
+      <Button fx:id="ADD" layoutX="331.0" layoutY="351.0" mnemonicParsing="false" onMouseClicked="#addButtonClicked" text="Add Coupon" />
+   </children>
+</Pane>
